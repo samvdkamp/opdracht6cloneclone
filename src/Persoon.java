@@ -52,6 +52,14 @@ public class Persoon {
         return check;
     }
 
+    public Game zoekGameOpNaam(String nm){
+        for(Game game: games){
+            if(game.getNaam().equals(nm)){
+                return game;
+            }
+        }
+        return null;
+    }
 
 
     public String toString(){
