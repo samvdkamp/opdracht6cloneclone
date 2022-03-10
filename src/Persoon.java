@@ -45,6 +45,13 @@ public class Persoon {
         return false;
     }
 
+    public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> check) {
+        for(Game game: games) {
+            check.removeIf(game2 -> game2.equals(game));
+        }
+        return check;
+    }
+
 
 
     public String toString(){
